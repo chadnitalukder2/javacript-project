@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .todo-item {
+            background: #03a9f4ab;
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .delete{
+            cursor: pointer;
+            font-size: 18px;
+            color: #e30b0b;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <input class="todo-input" type="text" name="name" />
+            <button onclick="addTodo()" type="submit">Submit</button>
+        </div>
+        <ul class="todo"></ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        todo = JSON.parse(localStorage.getItem("myTodo")) || [];
+        const todoList = $(".todo");
+        displayTodo();
+
+        function displayTodo() {
+            $(todoList).empty();
+            todo.forEach((item, index) => {
+                const todoItem = `<li class="todo-item">
+                <input type="checkbox" name="todo" id="todo" />
+                <label class="todo">${item}</label>
+                <label onclick="deleteItem(${index})" puja="${index}" class="delete">X</label>
+                <label data-index="${index}" class="edit">Edit</label>
+            </li>`;
+                $(todoList).append(todoItem);
+            });
+        }
+
+        function addTodo() {
+            const todoInput = $(".todo-input").val();
+            if (todoInput === "") {
+                alert("Please type something");
+                return;
+            }
+            todo.push(todoInput);
+            localStorage.setItem("myTodo", JSON.stringify(todo));
+            displayTodo();
+            $(".todo-input").val("");
+        }
+
+        function deleteItem(index){
+            todo = todo.filter((item, Itemindex) => Itemindex != index );
+            localStorage.setItem("myTodo", JSON.stringify(todo));
+            displayTodo();
+        }
+    </script>
+</body>
+</html>
