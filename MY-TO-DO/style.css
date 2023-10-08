@@ -1,0 +1,7 @@
+.my-todo{
+    background: rgb(231, 177, 231);
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
