@@ -23,7 +23,18 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-
+        $('#search-bar').keyup(function () {
+            var value = $(this).val().toLowerCase();
+            $('#list li').each(function(){
+                var search = $(this).text().toLowerCase();
+                if(search.indexOf(value)>-1){
+                    $(this).show();
+                }
+                else{
+                    $(this).hide();
+                }
+            });
+        });
     </script>
 
 </body>
