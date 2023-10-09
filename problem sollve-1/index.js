@@ -24,7 +24,6 @@ else{
 }*/
 
 //problem-5 vowel nirnoy
-
 /*const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
 function countVowels(sentence){
   let count = 0;
@@ -39,9 +38,12 @@ function countVowels(sentence){
 }
 console.log(countVowels("I love Bangladesh"));*/
 
-
-
-
+// problem-6 find duplicate number
+/*const numbers =[1, 2, 3, 4, 5, 6,9,5,5 ,4, 3, 5, 7, 8,8 ,8 ]
+const duplicate = numbers.filter(function (value, index, array) {
+  return array.indexOf(value) !== index
+});
+console.log(duplicate);*/
 
 
 
