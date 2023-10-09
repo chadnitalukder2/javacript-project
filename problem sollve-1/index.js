@@ -3,8 +3,8 @@
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
   console.log(getRndInteger(1,6));*/
-  
-  //problem-2  kivabe alpabet onujaiye shajanu jay
+
+//problem-2  kivabe alpabet onujaiye shajanu jay
 /*const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.sort();
 console.log(fruits);*/
@@ -12,7 +12,7 @@ console.log(fruits);*/
 //problem-3
 /*const points = [40, 100, 1, 5, 25, 10];
 points.sort(function(a, b){return a - b});
-console.log(points);*/   
+console.log(points);*/
 
 // problem-4 lip year
 /*let num = parseInt(prompt("Enten a year"));
@@ -45,13 +45,27 @@ const duplicate = numbers.filter(function (value, index, array) {
 });
 console.log(duplicate);*/
 
+//problem-7 nicher sentence kotogula same word ace and koto number gore 1st word ace
 
+/*const sentence =
+  " A paragraph is a series of sentences that are a organized and coherent, and are all a related to a single topic. Almost every piece of writing a you do that is longer than a few sentences should be organized into a paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.";
 
+// const matches = sentence.match(/a/gi);
+// const ocurances = matches.length;
+// console.log(matches);
+// console.log(ocurances);
 
+const matches = sentence.match(/sumit/gi);
+const ocurances = matches ? matches.length: 0;
+console.log(ocurances);
 
+// const position = sentence.search(/a/i);
+// console.log(position);
 
+let position = sentence.search(/sumit/i);
+position = position >= 0 ? position : "not found!";
 
-
+console.log(position);*/
 
 
 
