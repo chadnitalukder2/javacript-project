@@ -46,7 +46,6 @@ const duplicate = numbers.filter(function (value, index, array) {
 console.log(duplicate);*/
 
 //problem-7 nicher sentence kotogula same word ace and koto number gore 1st word ace
-
 /*const sentence =
   " A paragraph is a series of sentences that are a organized and coherent, and are all a related to a single topic. Almost every piece of writing a you do that is longer than a few sentences should be organized into a paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.";
 
@@ -66,6 +65,38 @@ let position = sentence.search(/sumit/i);
 position = position >= 0 ? position : "not found!";
 
 console.log(position);*/
+
+//Problem-8 
+//input: linearSearch (['a','b', 'c', 'd', 'c'], 'c')
+//output 2 or not found
+//problem linearSearch() function ti implement kore dekhaw
+
+/*function linearSearch(arr, val) {
+  const length = arr.length;
+  for(let i = 0; i < length; i++){
+    if(arr[i] === val){
+      return i;
+    }
+  }
+ return "not found!" ;
+}
+console.log(linearSearch(['a','b', 'c', 'd', 'c'], 'd'));*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
