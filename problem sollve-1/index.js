@@ -13,3 +13,43 @@ console.log(fruits);*/
 /*const points = [40, 100, 1, 5, 25, 10];
 points.sort(function(a, b){return a - b});
 console.log(points);*/   
+
+// problem-4 lip year
+/*let num = parseInt(prompt("Enten a year"));
+if((num % 4 === 0) && (num % 100 !== 0) || (num % 400 === 0) ){
+  console.log(`${num} is a leap year`);
+}
+else{
+  console.log(`${num} is not a leap year`);
+}*/
+
+//problem-5 vowel nirnoy
+
+/*const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+function countVowels(sentence){
+  let count = 0;
+  const letters = Array.from(sentence);
+
+  letters.forEach(function (value){
+    if(vowels.includes(value)){
+      count++
+    }
+  });
+  return count;
+}
+console.log(countVowels("I love Bangladesh"));*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
