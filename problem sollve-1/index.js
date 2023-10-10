@@ -97,7 +97,7 @@ console.log(longestString(['sumit saha', 'learn width sumit', 'akash', 'saad', '
 //problem-10
 //1 - 100 porjonto kun songkagulu 3,5 and 3 o 5 dara bivajo ta ber koro
 
-function fizzBuzz(Number){
+/*function fizzBuzz(Number){
   for(let i = 1; i <= Number; i++){
     if( i % 15 === 0){
       console.log(`${i} is fizzBuzz`);
@@ -114,10 +114,31 @@ function fizzBuzz(Number){
   }
 }
 
-fizzBuzz(100);
+fizzBuzz(100);*/
 
-
-
+//problem-11
+//false value -- false, undefined, null, '', nan, 0
+const mixedArr = [
+  "lws",
+  undefined,
+  "learn with sumit",
+  false,
+  "",
+  "apple",
+  40,
+  "k",
+  true,
+  "Thanks all",
+  NaN
+];
+const trueArray = mixedArr.filter(function(el){
+if(el){
+  return true;
+}else{
+  return false
+}
+});
+console.log(trueArray);
 
 
 
