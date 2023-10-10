@@ -82,7 +82,7 @@ console.log(position);*/
 console.log(linearSearch(['a','b', 'c', 'd', 'c'], 'd'));*/
 
 //problem-9 longestString
-function longestString(names){
+/*function longestString(names){
   let longestWord = '';
   for(name of names){
     if (name.length > longestWord.length ){
@@ -92,10 +92,29 @@ function longestString(names){
   return[longestWord, names.indexOf(longestWord)];
 };
 console.log(longestString(['sumit saha', 'learn width sumit', 'akash', 'saad', 'daiyan']));
+*/
 
+//problem-10
+//1 - 100 porjonto kun songkagulu 3,5 and 3 o 5 dara bivajo ta ber koro
 
+function fizzBuzz(Number){
+  for(let i = 1; i <= Number; i++){
+    if( i % 15 === 0){
+      console.log(`${i} is fizzBuzz`);
+    }
+    else if( i % 3 === 0){
+      console.log(`${i} is fizz`);
+    }
+    else if(i % 5 === 0){
+      console.log(`${i} is Buzz`);
+    }
+    else{
+      console.log(`${i}`);
+    }
+  }
+}
 
-
+fizzBuzz(100);
 
 
 
