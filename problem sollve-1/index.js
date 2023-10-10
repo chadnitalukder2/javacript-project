@@ -199,10 +199,25 @@ captain === "Mashrafi" || console.log("angery");*/
 // Replace all occurances of "Framework" with "library"
 console.log(quout.replace(/framework/gi, "library"));*/
 
-//problem
+//problem-18 log values with variable names smartly
+/*const library1 = "jQuery";
+const library2 = " Reacty ";
 
+console.log(`library1 - ${library1}`);
+console.log(`library2 - ${library2}`);
 
+console.log({library1});
+console.log({library2});*/
 
+//problem-19 know performance of a task
+const startTime = performance.now();
+
+for(let i = 0; i <= 50; i++){
+  console.log(i);
+}
+
+const endTime = performance.now();
+console.log(`loop took ${endTime - startTime} milliseconds to finish`);
 
 
 
