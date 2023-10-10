@@ -142,7 +142,7 @@ const trueArray = mixedArr.filter(Boolean);
 console.log(trueArray);*/
 
 //problem-12 false value of object
-const obj = { 
+/*const obj = { 
  a: "lws",
  b: undefined,
  c: "learn with sumit",
@@ -163,8 +163,25 @@ const truthyObject = function(obj){
   }
   return obj;
 }
-console.log(truthyObject(obj));
+console.log(truthyObject(obj));*/
 
+//problem-13 convert any value to boolean
+//use !! in front of any value
+/*console.log(!! "nitesh"); // true
+console.log(!! undefined); // false
+console.log(Boolean("ntesh")); // true*/
+
+// problem-14 resizing any array
+/*let animals = ["cow", "dog", "cat", "tirger", "lion"];
+animals.length = 3; //we can use array's length property
+console.log(animals);*/
+
+//problem-15 how to flattern a multi-dimensional array
+/*let smileys = ["dog",["cat", "lion"], "crow" ["cow", "parot"]]
+console.log(smileys.flat());
+
+let smileys2 = ["sumi", ["soniya", "riya", ["sanjida", "toma"], "priya"]]
+console.log(smileys2.flat(Infinity));*/
 
 
 
