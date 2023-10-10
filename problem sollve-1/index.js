@@ -183,6 +183,26 @@ console.log(smileys.flat());
 let smileys2 = ["sumi", ["soniya", "riya", ["sanjida", "toma"], "priya"]]
 console.log(smileys2.flat(Infinity));*/
 
+//problem-16 short conditionals
+/*const captain = "Mashrafi";
+
+// if(captain === "Mashrafi"){
+//   console.log("love");
+// }
+
+captain === "Mashrafi" && console.log("love");
+captain === "Mashrafi" || console.log("angery");*/
+ 
+//problem-17 Replace all occurances of a string
+/*const quout = "React is a JS framework & this framework is the most popular front-end framework right now ";
+
+// Replace all occurances of "Framework" with "library"
+console.log(quout.replace(/framework/gi, "library"));*/
+
+//problem
+
+
+
 
 
 
