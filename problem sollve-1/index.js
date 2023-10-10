@@ -70,7 +70,6 @@ console.log(position);*/
 //input: linearSearch (['a','b', 'c', 'd', 'c'], 'c')
 //output 2 or not found
 //problem linearSearch() function ti implement kore dekhaw
-
 /*function linearSearch(arr, val) {
   const length = arr.length;
   for(let i = 0; i < length; i++){
@@ -82,6 +81,17 @@ console.log(position);*/
 }
 console.log(linearSearch(['a','b', 'c', 'd', 'c'], 'd'));*/
 
+//problem-9 longestString
+function longestString(names){
+  let longestWord = '';
+  for(name of names){
+    if (name.length > longestWord.length ){
+      longestWord = name;
+    }
+  }
+  return[longestWord, names.indexOf(longestWord)];
+};
+console.log(longestString(['sumit saha', 'learn width sumit', 'akash', 'saad', 'daiyan']));
 
 
 
