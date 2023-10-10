@@ -118,7 +118,7 @@ fizzBuzz(100);*/
 
 //problem-11
 //false value -- false, undefined, null, '', nan, 0
-const mixedArr = [
+/*const mixedArr = [
   "lws",
   undefined,
   "learn with sumit",
@@ -131,19 +131,39 @@ const mixedArr = [
   "Thanks all",
   NaN
 ];
-const trueArray = mixedArr.filter(function(el){
-if(el){
-  return true;
-}else{
-  return false
+// const trueArray = mixedArr.filter(function(el){
+// if(el){
+//   return true;
+// }else{
+//   return false
+// }
+// });
+const trueArray = mixedArr.filter(Boolean);
+console.log(trueArray);*/
+
+//problem-12 false value of object
+const obj = { 
+ a: "lws",
+ b: undefined,
+ c: "learn with sumit",
+ d: false,
+ c: "",
+ d: "apple",
+ e: 40,
+ f: "k",
+ g: true,
+ h: "Thanks all",
+ i: NaN
+};
+const truthyObject = function(obj){
+  for(let i in obj){
+    if( !obj[i]) {
+      delete obj[i];
+    }
+  }
+  return obj;
 }
-});
-console.log(trueArray);
-
-
-
-
-
+console.log(truthyObject(obj));
 
 
 
