@@ -210,14 +210,14 @@ console.log({library1});
 console.log({library2});*/
 
 //problem-19 know performance of a task
-const startTime = performance.now();
+/*const startTime = performance.now();
 
 for(let i = 0; i <= 50; i++){
   console.log(i);
 }
 
 const endTime = performance.now();
-console.log(`loop took ${endTime - startTime} milliseconds to finish`);
+console.log(`loop took ${endTime - startTime} milliseconds to finish`);*/
 
 
 
